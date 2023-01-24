@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="insetting">
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS clip-path Maker</title>
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400,400i" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<meta name="viewport" content="width=device-width" />
+	</head>
+	<body>
+		<div class="main">
+			<header class="fade-content">
+				<a href="">CSS clip-path maker</a>	
+			</header>
+			<div class="demo-container fade-content">
+				<section class="demo">
+					<div id="box" class="box">
+						<div class="shadowboard"></div>
+						<div class="clipboard"></div>
+						<div class="handles"></div>
+					</div>
+				</section>
+			</div>
+			<section class="dark-panel custom">
+				<h2>Custom shape</h2>
+				<button class="finish"></button>
+			</section>
+			<section class="dark-panel inset">
+				<div class="flex">
+					<h2>Round edges</h2>
+					<input value="5% 20% 0 10%" class="inset-round" type="text" />
+				</div>
+				
+			</section>
+			<section id="flickity" class="shapes horizontal gallery">
+				<ul></ul>
+			</section>
+			<section class="clip-path" tabindex="-1">
+				<div class="css-code code fade-content">
+					<code class="unprefixed block show">clip-path: <span class="functions"></span>;</code>
+				</div>
+			</section>
+		</div>
+		<div class="side">
+			
+			
+			<section class="dark-panel inset">
+				<div class="flex">
+					<h2>Round edges</h2>
+					<input value="5% 20% 0 10%" class="inset-round" type="text" />
+				</div>
+			</section>
+			<section class="dark-panel custom">
+				<h2>Custom shape</h2>
+				<button class="finish"></button>
+			</section>
+			<section class="shapes vertical" tabindex="-1">
+				<ul></ul>
+			</section>
+			<section class="options">
+				<div class="grid panel flex fade-content">
+					<h2>Demo Size</h2>
+					<input id="demo_width" value="280" type="number" />
+					<h2>&times;</h2>
+					<input id="demo_height" value="280" type="number" />
+				</div>
+				<div class="grid panel fade-content">
+					<h2>Demo Background</h2>
+					<div class="backgrounds">
+						<img src="pics/pittsburgh.jpg" />
+						<img src="pics/fierenze.jpg" />
+						<img src="pics/sparkler.jpg" />
+						<img src="pics/miami.jpg" />
+						<img src="pics/golf.jpg" />
+						<img src="pics/isaac.jpg" />
+						<img src="pics/colorado.jpg" />
+						<img src="pics/pittsburgh-night.jpg" />
+					</div>
+					<style id="custom_background"></style>
+					<div class="flex shadowboard-toggle">
+						<h2>Show outside clip-path</h2>
+						<input name="prefix" type="checkbox" id="shadowboard-toggle" />
+						<label class="joined" for="shadowboard-toggle"></label>
+					</div>
+				</div>
+					
+			</section>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="draggabilly.js"></script>
+		<script src="clip.js"></script>
+		
+	</body>
+</html>
